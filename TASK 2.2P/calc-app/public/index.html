@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Simple Calculator</h2>
+        <input type="text" id="username" placeholder="Enter your name">
+        <button onclick="getGreeting()">Greet Me</button>
+        <p id="greetingMessage"></p>
+        <input type="number" id="num1" placeholder="Enter first number">
+        <span id="operator">  </span> 
+        <input type="number" id="num2" placeholder="Enter second number">
+        <button class="operation-btn" onclick="calculate('+')">Add</button>
+    <button class="operation-btn" onclick="calculate('-')">Subtract</button>
+    <button class="operation-btn" onclick="calculate('*')">Multiply</button>
+    <button class="operation-btn" onclick="calculate('/')">Divide</button>
+    <button class="operation-btn" onclick="calculate('^')">Power</button>
+        <p id="result"></p>
+
+ 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

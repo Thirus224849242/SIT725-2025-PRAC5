@@ -1,0 +1,25 @@
+{
+  "name": "sit725-2025-prac1",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+"type": "git",
+"url": "https://github.com/Thirus224849242/SIT725-2025-PRAC1.git"
+},
+  "keywords": [],
+  "author": "THIRUMAL REDDY ENUGU",
+  "license": "MIT",
+  "bugs": {
+"url": "https://github.com/Thirus224849242/SIT725-2025-PRAC1/issues"
+},
+"homepage": "https://github.com/Thirus224849242/SIT725-2025-PRAC1/blob/main/README",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
+
