@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Thirus224849242/SIT725-2025-PRAC1#readme",
   "description": "",
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "mongoose": "^8.13.1"
   }
 }

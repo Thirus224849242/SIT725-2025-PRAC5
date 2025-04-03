@@ -24,6 +24,20 @@ const submitForm = () => {
     formData.email = $('#email').val();
  
     console.log("Form Data Submitted: ", formData);
+
+    fetch('/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ first_name:formData.first_name, last_name: formData.last_name, email:formData.email, password:formData.password }) // Send data as JSON
+    })
+    .then(response => response.json()) // Convert response to JSON
+    .then(data => {
+        document.getElementById('status').innerText = ` ${data.message}`;
+        
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
 }
  
 const addCards = (items) => {
@@ -46,8 +60,11 @@ $(document).ready(function(){
     $('.materialboxed').materialbox();
     $('#formSubmit').click(()=>{
         submitForm();
+        setTimeout(() => {
+            $('#modal1').modal('close'); // Close modal after form submission
+        }, 500);
     })
     addCards(cardList);
     $('.modal').modal();
   });
- 
+
