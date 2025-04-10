@@ -1,0 +1,26 @@
+{
+  "name": "task-3.2p",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thirus224849242/SIT725-2025-PRAC1.git"
+  },
+  "author": "Thirumal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Thirus224849242/SIT725-2025-PRAC1/issues"
+  },
+  "homepage": "https://github.com/Thirus224849242/SIT725-2025-PRAC1#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "mongoose": "^8.13.1"
+  },
+  "keywords": [],
+  "description": ""
+}
